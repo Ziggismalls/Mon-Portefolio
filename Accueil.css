@@ -7,13 +7,13 @@ html {
     scroll-behavior: smooth ;
 }
 body {
-    background: linear-gradient(#69A297, #edda96, #69A297)fixed;
+    background-color: black;
     width: 100%;
     height: 100%;
 }
 
 .nav ul a:hover{
-    background:rgba(128, 128, 128, 0.227);
+    background:rgba(128, 128, 128, 0.884);
 
 }
 
@@ -24,8 +24,8 @@ body {
     align-items: center;
     width: 100%;
     height: 100px;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+    font-size: 25px;
+    font-family:"Poppins", Sans-serif;
     padding: 10px 10px;
     opacity: .95 ;
     z-index: 3;
@@ -66,12 +66,12 @@ h1, h5 {
 
 h1 {
     letter-spacing: 40px;
-    margin-top: 200px;
+    margin-top: 150px;
     font-size:250px;
 }
 h5 {
     margin-bottom: 80px;
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 10px;
 }
 h2 {
@@ -104,7 +104,7 @@ h4 {
 }
 
 span#mouse {
-    margin: 140px;
+    margin: 50px;
 }
 .bdp {
     display: flex;
@@ -120,7 +120,7 @@ span#mouse {
     background-position: center;
 }
 footer {
-    margin-top: 500px;
+    margin-top: 0px;
 }
 .bitmoji {
     display: flex;
