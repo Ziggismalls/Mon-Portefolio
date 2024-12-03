@@ -133,13 +133,36 @@ h3 {
 }
 
 h4 {
-    margin-top: 80px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     color: #ffffffbb;
     font-family: "Poppins", Sans-serif;
-    
     font-size: 65px;
+}
+
+section.contactbox  {
+    padding: 80px;
+    background-color: blue;
+}
+.formbox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+}
+input {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    width: 50%;
 }
 
 footer {
