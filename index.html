@@ -8,7 +8,11 @@
       src="https://kit.fontawesome.com/7275ee845f.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+    </style>
     <title>Portefolio</title>
   </head>
   <body>
@@ -23,49 +27,52 @@
             />
           </a>
           <ul class="linka">
-            <li><a href="#top">//Home</a></li>
-            <li><a href="#exp">// Expertise</a></li>
-            <li><a href="#work">// Work</a></li>
-            <li><a href="#contact">//Contact</a></li>
+            <li><a href="#top">// home</a></li>
+            <li><a href="#exp">// expertise</a></li>
+            <li><a href="#work">// work</a></li>
+            <li><a href="#contact">// contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <div class="abb1">
-        <h1>TEN ISRO</h1>
-        <h5>SOFTWARE ENGENEER, FRONT END & BACK END.</h5>
+        <div>
+          <h1>TEN ISRO</h1>
+          <h5>SOFTWARE ENGENEER, FRONT END & BACK END.</h5>
+        </div>
+        <div class="mouseloop">
+          <a href="#mouse">
+            <script
+              src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+              type="module"
+            ></script>
+            <dotlottie-player
+              src="https://lottie.host/f5e93eba-399b-44b4-b3f0-58406fdca316/5Uqzr9Uc6a.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 60px; height: 50px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </a>
+        </div>
       </div>
-      <div class="mouseloop">
-        <a href="#mouse">
-          <script
-            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-            type="module"
-          ></script>
-          <dotlottie-player
-            src="https://lottie.host/f5e93eba-399b-44b4-b3f0-58406fdca316/5Uqzr9Uc6a.lottie"
-            background="transparent"
-            speed="1"
-            style="width: 60px; height: 50px"
-            loop
-            autoplay
-          ></dotlottie-player>
-        </a>
-      </div>
-      <section class="p1">
-        <span id="mouse"></span>
-        <div class="map"><img src="pics/dunkerque.PNG" alt="" /></div>
-        <img
-          class="bitmoji"
-          src="pics/mon_bitmoji-removebg-preview.png"
-          alt="bitmoji"
-        />
+      <section class="aboutMe" id="mouse">
+        <div class="aboutMe1">
+          <img class="bitmoji" src="pics/bitmo.png" alt="bitmoji" />
+          <img class="map" src="pics/dunkerque.PNG" alt="" />
+        </div>
         <div class="a-propos-de-moi">
+          <p>Je m'appelle Frantz.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in
-            repellat commodi, dolorum veritatis excepturi . Quaerat sed dolorum
-            necessitatibus eaque corporis, odio consequuntur facere ex adipisci
-            sapiente deleniti, magnam cupiditate?
+            Passionné par le code, je suis à la fois efficace et rigoureux. </p>
+            <p>
+              Mon
+              désir constant de perfection et mon engagement à fournir des
+              résultats de qualité font de moi un développeur accompli, toujours
+              prêt à apprendre et à repousser mes limites.
+            </p>
           </p>
         </div>
       </section>
@@ -81,39 +88,51 @@
         </h3>
       </section>
 
-      <section class="contactbox">
-        <h4 id="contact">Me contacter</h4>
+      <section>
+        <div>
+          <img
+            id="contact"
+            class="bitmojiContact"
+            src="pics/bitmojiConctact.png"
+            alt=""
+          />
+        </div>
+        <div class="contactbox">
+          <div>
+            <h4>Me contacter</h4>
 
-        <form method="post">
-          <div class="np">
-            <input
-              class="name"
-              type="text"
-              value=""
-              minlength="3"
-              maxlength="20"
-              placeholder="Nom"
-            />
+            <form method="post">
+              <div class="np">
+                <input
+                  class="name"
+                  type="text"
+                  value=""
+                  minlength="3"
+                  maxlength="20"
+                  placeholder="Nom"
+                />
 
-            <input
-              class="name"
-              type="text"
-              value=""
-              minlength="3"
-              maxlength="15"
-              placeholder="Prénom"
-            />
+                <input
+                  class="name"
+                  type="text"
+                  value=""
+                  minlength="3"
+                  maxlength="20"
+                  placeholder="Prénom"
+                />
+              </div>
+
+              <input class="mail" type="email" value="" placeholder="Email" />
+
+              <textarea
+                class="emtxt"
+                placeholder="Entrez votre message ici "
+                rows="10"
+              ></textarea>
+              <input class="submit" type="submit" value="ENVOYER" />
+            </form>
           </div>
-
-          <input class="mail" type="email" value="" placeholder="Email" />
-
-          <textarea
-            class="emtxt"
-            placeholder="Entrez votre message ici "
-            rows="10"
-          ></textarea>
-          <input class="submit" type="submit" value="ENVOYER" />
-        </form>
+        </div>
       </section>
     </main>
 
