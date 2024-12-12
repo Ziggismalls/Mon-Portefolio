@@ -41,6 +41,7 @@ main {
   width: 70%;
   justify-content: center;
   gap: 30px;
+  font-size: 18px;
 }
 
 .grp1 {
