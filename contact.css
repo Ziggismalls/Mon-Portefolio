@@ -5,14 +5,15 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 500px;
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
 }
 .bitmojiContact {
   width: 200px;
 }
-
+.formContainer {
+  padding: 20px;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -45,10 +46,7 @@ textarea {
 .name {
   width: 185px;
 }
-.emtxt {
-  width: 100%;
-  padding: 0;
-}
+
 ::placeholder {
   color: #bbb;
 }
@@ -59,5 +57,10 @@ textarea {
 }
 
 textarea {
+  scrollbar-width: none;
   border-radius: 3px;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0;
+  max-height: 220px;
 }
