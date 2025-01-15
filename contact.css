@@ -1,0 +1,63 @@
+.formbox {
+  position: relative;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+.bitmojiContact {
+  width: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 20px;
+}
+.submit {
+  width: fit-content;
+  border-radius: 50px;
+  align-self: center;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.submit:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+input,
+textarea {
+  background-color: transparent;
+  color: #000000;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  outline: none;
+}
+
+.name {
+  width: 185px;
+}
+.emtxt {
+  width: 100%;
+  padding: 0;
+}
+::placeholder {
+  color: #bbb;
+}
+.np {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+}
+
+textarea {
+  border-radius: 3px;
+}
