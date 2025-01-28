@@ -13,10 +13,17 @@ header {
   position: relative;
   height: 100%;
 }
+
+:root {
+  --bgcolor: #1a191d;
+  --bgCalq: linear-gradient(rgba(153, 110, 73, 0) 60%, #1a191d 95%);
+  --links: #f1f1f1;
+  --textcolor: rgb(0, 0, 0);
+}
 body {
   position: relative;
   font-family: "Roboto Mono", monospace;
-  background-color: #1a191d;
+  background-color: var(--bgcolor);
 }
 .background {
   position: absolute;
@@ -34,7 +41,7 @@ body {
 .bgcalq {
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(153, 110, 73, 0) 60%, #1a191d 95%);
+  background: var(--bgCalq);
 }
 body {
   text-rendering: optimizeLegibility;
@@ -70,12 +77,12 @@ main {
   border-radius: 50px;
   padding: 5px 20px;
   text-decoration: none;
-  color: white;
+  color: var(--links);
 }
 
 .linka a:hover {
-  background: rgb(255, 255, 255);
-  color: black;
+  background: var(--links);
+  color: var(--textcolor);
 }
 
 .abb1 {
@@ -99,9 +106,9 @@ main {
   left: 54%;
   width: 50px;
   height: 50px;
-  animation: 2s linear infinite alternate slidein;
+  animation: 2s linear infinite alternate widgetslide;
 }
-@keyframes slidein {
+@keyframes widgetslide {
   from {
     transform: translateX(0);
   }
@@ -113,21 +120,26 @@ main {
   box-sizing: border-box;
   width: 50px;
   height: 50px;
-  background-color: white;
+  background-color: var(--links);
   opacity: 1;
 }
 .circle.yel {
   border-radius: 50px;
-  box-shadow: inset 0 0 30px 0 #fff, inset 20px 0 30px #ffd400,
-    inset -20px 0 30px red, inset 20px 0 300px #ff40d6,
-    inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00,
+  box-shadow:
+    inset 0 0 30px 0 #fff,
+    inset 20px 0 30px #ffd400,
+    inset -20px 0 30px red,
+    inset 20px 0 300px #ff40d6,
+    inset -20px 0 300px #e3ff4b,
+    0 0 50px #fff,
+    -10px 0 100px #fbff00,
     10px 0 80px #f55;
 }
 h1,
 h2,
 h3,
 h5 {
-  color: #ffffff;
+  color: var(--links);
 }
 
 h1 {
@@ -175,11 +187,14 @@ footer {
 }
 
 .fa-brands {
-  border: 2px solid white;
+  border: 2px solid var(--links);
   border-radius: 100%;
   padding: 10px;
 }
 
 button {
-  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--links);
 }

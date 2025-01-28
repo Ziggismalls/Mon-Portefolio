@@ -1,3 +1,10 @@
+:root {
+  --bgcolor: #1a191d;
+  --bgCalq: linear-gradient(rgba(153, 110, 73, 0) 60%, #1a191d 95%);
+  --links: #f1f1f1;
+  --textcolor: black;
+}
+
 .formbox {
   position: relative;
   width: 35%;
@@ -5,7 +12,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--links);
   border-radius: 30px;
 }
 .bitmojiContact {
@@ -24,22 +31,22 @@ form {
   width: fit-content;
   border-radius: 50px;
   align-self: center;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  border: 2px solid var(--textcolor);
+  background-color: var(--links);
+  color: var(--textcolor);
   font-weight: bold;
 }
 .submit:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--textcolor);
   color: rgb(255, 255, 255);
 }
 input,
 textarea {
   background-color: transparent;
-  color: #000000;
+  color: var(--textcolor);
   padding: 15px;
   border: none;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid var(--textcolor);
   outline: none;
 }
 
@@ -63,4 +70,7 @@ textarea {
   max-width: 100%;
   padding: 0;
   max-height: 220px;
+}
+.fa-arrow-up {
+  font-size: 25px;
 }
