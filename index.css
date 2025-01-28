@@ -144,10 +144,12 @@ h5 {
 
 h1 {
   letter-spacing: 20px;
-  font-size: 200px;
+  font-size: 12em;
+  text-align: center;
 }
 
 h2,
+h4,
 h3 {
   font-size: 5em;
 }
@@ -173,10 +175,6 @@ h4 {
   justify-content: flex-end;
 }
 
-h4 {
-  font-size: 65px;
-}
-
 footer {
   height: 200px;
 }
@@ -197,4 +195,114 @@ button {
   height: 50px;
   border-radius: 50%;
   background-color: var(--links);
+}
+/* MEDIA QUERIES POUR LES TAILLES D'ÉCRAN PLUS PETITES */
+
+@media (max-width: 1024px) {
+  main {
+    padding: 100px 50px;
+  }
+
+  .nav {
+    font-size: 20px;
+  }
+
+  .linka {
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 8em;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-size: 4em;
+  }
+
+  .elementor-widget-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 60px 30px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .linka {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .abb1 {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 6em;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-size: 3.5em;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 40px 20px;
+  }
+
+  .nav {
+    font-size: 16px;
+  }
+
+  .linka {
+    font-size: 14px;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-size: 2.5em;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer {
+    height: 150px;
+  }
 }

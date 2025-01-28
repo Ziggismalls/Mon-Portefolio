@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   background-color: var(--links);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 .bitmojiContact {
   width: 200px;
@@ -73,4 +73,13 @@ textarea {
 }
 .fa-arrow-up {
   font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+  .formbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }
