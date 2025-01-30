@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 :root {
   --bgcolor: #1a191d;
   --bgCalq: linear-gradient(rgba(153, 110, 73, 0) 60%, #1a191d 95%);
@@ -5,27 +8,34 @@
   --textcolor: black;
 }
 
+.contactbox {
+  display: flex;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vh;
+}
 .formbox {
-  position: relative;
-  width: 35%;
+  width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
   background-color: var(--links);
   border-radius: 10px;
 }
 .bitmojiContact {
-  width: 200px;
+  width: 20vh;
 }
-.formContainer {
-  padding: 20px;
-}
+
 form {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: fit-content;
   gap: 20px;
+  padding: 30px 0 20px 0;
 }
 .submit {
   width: fit-content;
@@ -35,6 +45,7 @@ form {
   background-color: var(--links);
   color: var(--textcolor);
   font-weight: bold;
+  cursor: pointer;
 }
 .submit:hover {
   background-color: var(--textcolor);
@@ -51,7 +62,7 @@ textarea {
 }
 
 .name {
-  width: 185px;
+  max-width: 185px;
 }
 
 ::placeholder {
@@ -76,10 +87,12 @@ textarea {
 }
 
 @media (max-width: 1024px) {
-  .formbox {
+  main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    align-items: center;
+  }
+  .contactForm {
+    width: 50vh;
   }
 }

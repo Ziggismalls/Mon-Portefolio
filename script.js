@@ -14,5 +14,13 @@ p = new Typed(p, {
   backSpeed: 50,
   backDelay: 1000,
   cursorChar: "_",
-  showCursor: true,
+  onStringTyped: function (arrayPos, self) {
+    // Vérifie si toutes les phrases ont été tapées
+    if (arrayPos === self.strings.length - 1) {
+      // Retirer le curseur lorsque la dernière phrase est terminée
+      setTimeout(() => {
+        self.cursor.remove();
+      }, 500); // Un petit délai pour être sûr que la dernière phrase est bien complète
+    }
+  },
 });
