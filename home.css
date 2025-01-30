@@ -54,7 +54,7 @@
   border-radius: 5px;
   padding: 20px;
   height: 360px;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 5vw, 1.2rem);
   color: var(--aboutMeText);
   width: 660px;
 }
