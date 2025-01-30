@@ -8,19 +8,35 @@ map.addEventListener("click", () => {
 });
 
 const p = document.querySelector("#typedStyle");
-p = new Typed(p, {
+const typed = new Typed(p, {
   strings: ["Bonjour !", "Je m'appelle Frantz", "Bienvenue sur mon site"],
   typeSpeed: 50,
   backSpeed: 50,
   backDelay: 1000,
   cursorChar: "_",
   onStringTyped: function (arrayPos, self) {
-    // Vérifie si toutes les phrases ont été tapées
     if (arrayPos === self.strings.length - 1) {
-      // Retirer le curseur lorsque la dernière phrase est terminée
       setTimeout(() => {
         self.cursor.remove();
-      }, 500); // Un petit délai pour être sûr que la dernière phrase est bien complète
+      }, 500);
     }
   },
+});
+
+const btn = document.getElementById("btnGoUp");
+
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > window.innerHeight * 0.9) {
+    btn.style.animation = "fadeIn 1s";
+    btn.style.visibility = "visible";
+  } else {
+    btn.style.animation = "fadeOut 1s";
+    setTimeout(() => {
+      btn.style.visibility = "hidden";
+    }, 1000);
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });

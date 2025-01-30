@@ -108,6 +108,10 @@
   }
 }
 
+.herop span {
+  color: white;
+}
+
 /* MEDIA QUERIES POUR LES TAILLES D'ÉCRAN PLUS PETITES */
 
 @media (max-width: 1024px) {

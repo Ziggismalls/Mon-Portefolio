@@ -36,12 +36,25 @@ body {
   height: 100vh;
   width: 100%;
 }
-.herop {
-  display: flex;
-  flex-direction: row;
+
+#btnGoUp {
+  animation: fadeIn 2s;
 }
-.herop span {
-  color: white;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .bgcalq {
   height: 100%;
@@ -169,14 +182,11 @@ h5 {
   justify-content: center;
 }
 
-h2 {
+h2,
+h3 {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
-}
-.workbox {
-  display: flex;
-  justify-content: flex-end;
 }
 
 footer {
@@ -195,7 +205,8 @@ footer {
 }
 
 button {
-  position: absolute;
+  visibility: hidden;
+  position: fixed;
   cursor: pointer;
   right: 5vh;
   bottom: 5vh;
