@@ -38,16 +38,12 @@
   transform: scale(1.1);
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
 .bitmoji {
   display: flex;
-  width: 180px;
-  height: 180px;
+  width: 18vh;
+}
+.bitmojiImg {
+  width: 100%;
   margin-left: 50px;
 }
 .aboutMe1 {
@@ -114,10 +110,32 @@
 
 /* MEDIA QUERIES POUR LES TAILLES D'ÉCRAN PLUS PETITES */
 
+@media (max-width: 1366px) {
+  .containerAboutMe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 @media (max-width: 1024px) {
   .containerAboutMe {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .bitmoji {
+    width: 14vh;
+  }
+  .bitmojiImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .herop {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
   }
 }

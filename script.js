@@ -24,7 +24,6 @@ const typed = new Typed(p, {
 });
 
 const btn = document.getElementById("btnGoUp");
-
 window.addEventListener("scroll", (e) => {
   if (window.scrollY > window.innerHeight * 0.9) {
     btn.style.animation = "fadeIn 1s";

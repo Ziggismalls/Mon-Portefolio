@@ -25,7 +25,7 @@
   align-items: center;
   flex-direction: column;
   background-color: var(--links);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .bitmojiContact {
   width: 20vh;
@@ -87,6 +87,16 @@ textarea {
   font-size: 25px;
 }
 
+@media (max-width: 1366px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactForm {
+    width: 50vh;
+  }
+}
 @media (max-width: 1024px) {
   main {
     display: flex;
@@ -95,5 +105,8 @@ textarea {
   }
   .contactForm {
     width: 50vh;
+  }
+  .bitmojiContact {
+    width: 14vh;
   }
 }
