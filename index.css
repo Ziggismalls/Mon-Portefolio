@@ -18,6 +18,7 @@ header {
   --bgCalq: linear-gradient(rgba(153, 110, 73, 0) 60%, #1a191d 95%);
   --links: #f1f1f1;
   --textcolor: rgb(0, 0, 0);
+  --purple: #9381ff;
 }
 body {
   position: relative;
@@ -120,7 +121,7 @@ main {
 }
 .elementor-widget-container {
   position: absolute;
-  top: 6%;
+  top: 4%;
   left: 54%;
   width: 50px;
   height: 50px;
@@ -202,6 +203,9 @@ footer {
   border: 2px solid var(--links);
   border-radius: 100%;
   padding: 10px;
+}
+.fa-arrow-up {
+  color: var(--purple);
 }
 
 button {

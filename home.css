@@ -5,6 +5,7 @@
   --textcolor: black;
   --aboutMeText: #f1f1f1b0;
   --aboutMebg: rgba(128, 128, 128, 0.137);
+  --purple: #9381ff;
 }
 
 .aboutMe {
@@ -59,7 +60,7 @@
   width: 660px;
 }
 .bvn {
-  color: #9381ff;
+  color: var(--purple);
 }
 
 .herop {

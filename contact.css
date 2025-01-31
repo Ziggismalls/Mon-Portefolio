@@ -24,8 +24,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* background-color: color-mix(in hsl shorter hue, lightgreen 20%, red 56%); */
-  background-color: color-mix(in srgb, lightblue 15%, lightgreen 85%);
+  background-color: var(--links);
+  /* background-color: color-mix(in srgb, lightblue 15%, lightgreen 85%); */
   border-radius: 5px;
 }
 .bitmojiContact {
