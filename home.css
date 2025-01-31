@@ -1,6 +1,5 @@
 :root {
   --bgcolor: #1a191d;
-  --bgCalq: linear-gradient(rgba(153, 110, 73, 0) 60%, #1a191d 95%);
   --links: #f1f1f1;
   --textcolor: black;
   --aboutMeText: #f1f1f1b0;
@@ -44,7 +43,6 @@
   width: 18vh;
 }
 .bitmojiImg {
-  width: 100%;
   margin-left: 50px;
 }
 .aboutMe1 {

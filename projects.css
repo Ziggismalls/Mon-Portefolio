@@ -2,7 +2,7 @@
   --white: #e3e4e8;
   --black: #000000;
   --purple: #9381ff;
-  --bgColor: rgba(51, 51, 51, 0.664);
+  --bgColor: rgba(128, 128, 128, 0.137);
 }
 
 .loader div {
@@ -207,7 +207,7 @@
   width: 100%;
   padding: 20px 0 20px 0;
   gap: 30px;
-  background-color: var(--bgColor);
+  background-color: transparent;
   border-radius: 5px;
 }
 
@@ -217,7 +217,6 @@
   overflow: hidden;
   border-radius: 5px;
 }
-
 .projectC2 {
   display: flex;
   flex-direction: column;
@@ -228,11 +227,9 @@
   height: 20%;
   color: rgb(255, 255, 255, 0.8);
 }
-
 .projectC:nth-child(4) {
   width: 62%;
 }
-
 .projectC:nth-child(n + 6) {
   width: 46%;
 }
@@ -247,92 +244,39 @@
   transition: 1s ease-out;
   transform: scale(1);
 }
-
 .fixHover {
   width: 100%;
   height: 80%;
   overflow: hidden;
 }
-
 .projetContainer:hover {
   cursor: pointer;
   transition: 1s ease;
   transform: scale(1.1);
 }
-
 .projet1Container {
   background-image: url("./pics/placeHolder.svg");
 }
-
 .projet2Container {
   background-image: url("./pics/placeHolder.svg");
 }
-
 .projet3Container {
   background-image: url("./pics/weatherApp.PNG");
 }
-
 .projet4Container {
   background-image: url("./pics/project2.PNG");
   width: 100%;
 }
-
 .projet5Container {
   background-image: url("./pics/placeHolder.svg");
 }
-
 .projet6Container {
   background-image: url("./pics/placeHolder.svg");
 
   width: 100%;
 }
-
 .projet7Container {
   background-image: url("./pics/project1.jpg");
 
   width: 100%;
-}
-
-/* Responsive styles for iPhone 13 */
-@media (max-width: 390px) {
-  .loader {
-    scale: 0.6;
-    margin-top: 40px;
-  }
-
-  .projetsContainer {
-    margin-top: 50px;
-    gap: 15px;
-  }
-
-  .projectC {
-    width: 100%;
-    height: 40vh;
-  }
-
-  .projectC2 {
-    height: 30%;
-  }
-
-  .projectC:nth-child(4) {
-    width: 100%;
-  }
-
-  .projectC:nth-child(n + 6) {
-    width: 100%;
-  }
-
-  .projetContainer {
-    height: 50vh;
-  }
-
-  .projet1Container,
-  .projet2Container,
-  .projet3Container,
-  .projet4Container,
-  .projet5Container,
-  .projet6Container,
-  .projet7Container {
-    width: 100%;
-  }
 }

@@ -14,8 +14,8 @@ header {
 }
 
 :root {
-  --bgcolor: #1a191d;
-  --bgCalq: linear-gradient(rgba(153, 110, 73, 0) 60%, #1a191d 95%);
+  --bodyBgColor: #141e28;
+  --bgCalq: linear-gradient(rgb(20, 30, 40, 0) 60%, #141e28 95%);
   --links: #f1f1f1;
   --textcolor: rgb(0, 0, 0);
   --purple: #9381ff;
@@ -23,7 +23,7 @@ header {
 body {
   position: relative;
   font-family: "Roboto Mono", monospace;
-  background-color: var(--bgcolor);
+  background-color: var(--bodyBgColor);
 }
 .background {
   position: absolute;
