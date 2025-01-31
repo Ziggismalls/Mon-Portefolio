@@ -255,28 +255,28 @@
   transform: scale(1.1);
 }
 .projet1Container {
-  background-image: url("/pics/placeHolder.svg");
+  background-image: url("./pics/placeHolder.svg");
 }
 .projet2Container {
-  background-image: url("/pics/placeHolder.svg");
+  background-image: url("./pics/placeHolder.svg");
 }
 .projet3Container {
-  background-image: url("/pics/weatherApp.PNG");
+  background-image: url("./pics/weatherApp.PNG");
 }
 .projet4Container {
-  background-image: url("/pics/project2.PNG");
+  background-image: url("./pics/project2.PNG");
   width: 100%;
 }
 .projet5Container {
-  background-image: url("/pics/placeHolder.svg");
+  background-image: url("./pics/placeHolder.svg");
 }
 .projet6Container {
-  background-image: url("/pics/placeHolder.svg");
+  background-image: url("./pics/placeHolder.svg");
 
   width: 100%;
 }
 .projet7Container {
-  background-image: url("/pics/project1.jpg");
+  background-image: url("./pics/project1.jpg");
 
   width: 100%;
 }
