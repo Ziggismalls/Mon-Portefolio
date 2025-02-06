@@ -1,4 +1,15 @@
-// Debut du code
+const projectData = [
+  {
+    text: " project 1",
+  },
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+];
+
 const map = document.querySelector("#map");
 
 map.addEventListener("click", () => {
@@ -38,4 +49,38 @@ window.addEventListener("scroll", (e) => {
 
 btn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const workbox = document.querySelector(".workbox");
+const projets = document.createElement("div");
+projets.classList.add("projetsContainer");
+workbox.appendChild(projets);
+
+projectData.forEach((project, index) => {
+  let realIndex = index + 1;
+  const projectContainer = document.createElement("div");
+  projectContainer.classList.add("projectC");
+  const projectContainer2 = document.createElement("div");
+  projectContainer2.classList.add("projectC2");
+  const fixHover = document.createElement("div");
+  fixHover.classList.add("fixHover");
+  const projectContent = document.createElement("div");
+  projectContent.classList.add(
+    "projetContainer",
+    `projet${realIndex}Container`
+  );
+
+  const webDevTitle = document.createElement("p");
+  projectContainer2.appendChild(webDevTitle);
+  webDevTitle.textContent = " projectData.text";
+
+  const webDev = document.createElement("p");
+  projectContainer2.appendChild(webDev);
+  webDev.textContent = "Web Developpement";
+
+  projectContainer.appendChild(projectContent);
+  projectContainer.appendChild(fixHover);
+  fixHover.appendChild(projectContent);
+  projets.appendChild(projectContainer);
+  projectContainer.appendChild(projectContainer2);
 });
