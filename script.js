@@ -1,3 +1,4 @@
+// Debut du code
 const map = document.querySelector("#map");
 
 map.addEventListener("click", () => {
@@ -6,7 +7,6 @@ map.addEventListener("click", () => {
     "_blank"
   );
 });
-
 const p = document.querySelector("#typedStyle");
 const typed = new Typed(p, {
   strings: ["Bonjour !", "Je m'appelle Frantz", "Bienvenue sur mon site"],
