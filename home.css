@@ -1,5 +1,5 @@
 :root {
-  --bgcolor: #1a191d;
+  --bgcolor: #1f191d;
   --links: #f1f1f1;
   --textcolor: black;
   --aboutMeText: #f1f1f1b0;
@@ -14,7 +14,6 @@
 .containerAboutMe {
   display: flex;
   justify-content: space-around;
-  gap: 10px;
 }
 
 .map1 {

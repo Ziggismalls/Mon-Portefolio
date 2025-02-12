@@ -19,6 +19,7 @@ map.addEventListener("click", () => {
   );
 });
 const p = document.querySelector("#typedStyle");
+
 const typed = new Typed(p, {
   strings: ["Bonjour !", "Je m'appelle Frantz", "Bienvenue sur mon site"],
   typeSpeed: 50,
@@ -35,15 +36,24 @@ const typed = new Typed(p, {
 });
 
 const btn = document.getElementById("btnGoUp");
+let isVisible = false;
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY > window.innerHeight * 0.9) {
-    btn.style.animation = "fadeIn 1s";
-    btn.style.visibility = "visible";
+  if (window.scrollY > window.innerHeight * 3) {
+    if (!isVisible) {
+      isVisible = true;
+      btn.style.animation = "fadeIn 1s";
+      btn.style.visibility = "visible";
+      console.log("scroll");
+    }
   } else {
-    btn.style.animation = "fadeOut 1s";
-    setTimeout(() => {
-      btn.style.visibility = "hidden";
-    }, 1000);
+    if (isVisible) {
+      isVisible = false;
+      btn.style.animation = "fadeOut 1s";
+      setTimeout(() => {
+        btn.style.visibility = "hidden";
+      }, 1000);
+      console.log("elsescroll ");
+    }
   }
 });
 
